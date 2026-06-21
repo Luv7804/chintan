@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chintan Viradiya | DevOps Engineer</title>
+    <meta name="description"
+        content="Chintan Viradiya - DevOps Engineer. Specializing in cloud automation, Kubernetes cluster management, GitOps (Flux), and high-availability infrastructures.">
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Three.js -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="scroll-progress"></div>
+        <div class="container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="var(--primary-color)" />
+                            <stop offset="100%" stop-color="#a855f7" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M6 16 C6 10, 12 10, 16 16 C20 22, 26 22, 26 16 C26 10, 20 10, 16 16 C12 22, 6 22, 6 16 Z"
+                        fill="none" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <line x1="14" y1="20" x2="18" y2="12" stroke="var(--text-color)" stroke-width="2.5"
+                        stroke-linecap="round" />
+                </svg>
+                <span>Chintan</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-extra">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero section">
+        <canvas id="hero-3d-canvas" class="hero-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content reveal">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Chintan Viradiya</h1>
+                <h2 class="role"><span id="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="description">
+                    Automating Infrastructure | High availability (HA) | Cloud & Kubernetes.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Luv7804" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chintan-viradiya-04484b1b8/" target="_blank"
+                        title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:chintanviradiya360311@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid reveal">
+                <div class="about-card">
+                    <div class="profile-img-container">
+                        <img src="Chintan_profile.jpg" alt="Chintan Viradiya" class="profile-img" decoding="async">
+                    </div>
+                    <h3>DevOps Engineer / Team Lead</h3>
+
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Gujarat, India</p>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I am a passionate <strong>DevOps Engineer / Team Lead</strong> with hands-on experience
+                        since January 2023
+                        (<span id="exp-timer">Calculating experience...</span>).
+                        I focus on building scalable infrastructure, automating workflows, and improving deployment
+                        efficiency.
+                    </p>
+                    <p>
+                        I specialize in cloud-native technologies, CI/CD pipelines, and infrastructure as code to
+                        deliver reliable and efficient systems.
+                        My goal is to bridge the gap between development and operations by implementing robust
+                        automation and monitoring.
+                    </p>
+                </div>
+            </div>
+            <div class="stats-grid reveal">
+                <div class="stat-card">
+                    <span id="exp-stat" class="stat-card__number">2+</span>
+                    <span class="stat-card__label">Years Experience</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number">10+</span>
+                    <span class="stat-card__label">Projects Done</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number">20+</span>
+                    <span class="stat-card__label">Technologies</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number">15+</span>
+                    <span class="stat-card__label">Production Environments</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Expertise</h2>
+            <p class="section-subtitle reveal" style="margin-bottom: 5rem;">
+                DevOps experience across industry knowledge and cutting-edge tools & technologies.
+            </p>
+
+            <!-- Industry Knowledge Skills Section -->
+            <div class="skills-section-header reveal">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-industry"></i>
+                    Industry Knowledge
+                </h3>
+            </div>
+
+            <div class="skills-grid industry-skills reveal">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon architecture">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Cloud-Native Architecture</h3>
+                            <p>Designing resilient, microservices-based systems utilizing containerization, dynamic
+                                orchestration, and scalable cloud-native patterns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon cicd">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Continuous Integration & Continuous Delivery</h3>
+                            <p>Building robust pipelines that automate testing and deployment, ensuring fast and
+                                reliable software delivery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon automation">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Infrastructure Automation</h3>
+                            <p>Leveraging IaC tools like Terraform to provision and manage consistent,
+                                repeatable environments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon monitoring">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Monitoring & Observability</h3>
+                            <p>Implementing full-stack visibility with Prometheus and Grafana to track system health and
+                                performance in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon ha">
+                            <i class="fas fa-arrow-trend-up"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>High Availability (HA)</h3>
+                            <p>Designing fault-tolerant architectures and load-balanced systems to ensure zero downtime
+                                for critical applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon backup">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Backups & Disaster Recovery</h3>
+                            <p>Implementing automated backup strategies and DR plans to ensure data integrity and rapid
+                                service restoration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies Section -->
+            <div class="skills-section-header reveal">
+                <h3 class="skills-category-title">
+                    <i class="fas fa-tools"></i>
+                    Tools & Technologies
+                </h3>
+            </div>
+
+            <div class="skills-grid tools-skills reveal">
+                <div class="skill-card primary-skill">
+                    <div class="skill-header">
+                        <div class="skill-icon aws">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Cloud Platforms</h3>
+                            <p>Hands-on experience with major cloud providers and specialized networking clouds for
+                                enterprise-grade solutions.</p>
+                        </div>
+                    </div>
+                    <div class="skill-features">
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="fab fa-aws"></i> AWS</span>
+                            <span class="tech-tag"><i class="fab fa-microsoft"></i> Azure</span>
+                            <span class="tech-tag"><i class="fas fa-network-wired"></i> E2E Networks</span>
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> TM Cloud</span>
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> Octos Cloud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon kubernetes">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Containers & Orchestration</h3>
+                            <p>Expertise in managing containerized workloads and cluster life-cycles to ensure scalable
+                                and resilient applications.</p>
+                        </div>
+                    </div>
+                    <div class="skill-features">
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-docker-plain"></i> Docker</span>
+                            <span class="tech-tag"><i class="devicon-podman-plain"></i> Podman</span>
+                            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                            <span class="tech-tag"><span class="tech-icon-mask"
+                                    style="--mask-url: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/helm.svg');"></span>
+                                Helm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon github">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>CI/CD & GitOps</h3>
+                            <p>Advanced pipeline automation and continuous delivery tools to streamline software release
+                                cycles and deployments.</p>
+                        </div>
+                    </div>
+                    <div class="skill-features">
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="fab fa-github"></i> GitHub Actions</span>
+                            <span class="tech-tag"><i class="devicon-jenkins-line"></i> Jenkins</span>
+                            <span class="tech-tag"><i class="fas fa-paper-plane"></i> Drone CI</span>
+                            <span class="tech-tag"><span class="tech-icon-mask"
+                                    style="--mask-url: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flux.svg');"></span>
+                                FluxCD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon terraform">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>IaC & Scripting</h3>
+                            <p>Architecting modular infrastructure components and automating operational tasks through
+                                advanced scripting techniques.</p>
+                        </div>
+                    </div>
+                    <div class="skill-features">
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-terraform-plain"></i> Terraform</span>
+                            <span class="tech-tag"><i class="fas fa-cubes"></i> Terragrunt</span>
+                            <span class="tech-tag"><i class="fas fa-puzzle-piece"></i> IaC Modules</span>
+                            <span class="tech-tag"><i class="devicon-bash-plain"></i> Bash</span>
+                            <span class="tech-tag"><i class="devicon-python-plain"></i> Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon ai-tech">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>AI-Driven Engineering</h3>
+                            <p>Leveraging specialized AI agents to accelerate development and optimize complex
+                                workflows.</p>
+                        </div>
+                    </div>
+                    <div class="skill-features">
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="fas fa-brain"></i> Skills</span>
+                            <span class="tech-tag"><i class="fas fa-sparkles"></i> AI Agents</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> Claude (CCR)</span>
+                            <span class="tech-tag"><i class="fas fa-laptop-code"></i> OpenCode</span>
+                            <span class="tech-tag"><i class="fas fa-terminal"></i> Antigravity CLI</span>
+                            <span class="tech-tag"><i class="fas fa-code"></i> Aider</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon monitoring">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Monitoring & Logging</h3>
+                            <p>Implementing full-stack observability and alerting solutions to maintain high system
+                                reliability and performance.</p>
+                        </div>
+                    </div>
+                    <div class="skill-features">
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-prometheus-plain"></i> Prometheus</span>
+                            <span class="tech-tag"><i class="devicon-grafana-plain"></i> Grafana</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> Robusta</span>
+                            <span class="tech-tag"><i class="fas fa-search"></i> Loki</span>
+                            <span class="tech-tag"><i class="fas fa-shield-halved"></i> Hubble</span>
+                            <span class="tech-tag"><i class="fas fa-heartbeat"></i> Healthchecks</span>
+                            <span class="tech-tag"><i class="fas fa-clock"></i> Uptime-kuma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon backup">
+                            <i class="fas fa-file-shield"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Backup and Disaster Recovery</h3>
+                            <p>Ensuring data resilience and rapid recovery across distributed environments through
+                                automated backup strategies.</p>
+                        </div>
+                    </div>
+                    <div class="skill-features">
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="fas fa-archive"></i> Velero</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> Longhorn</span>
+                            <span class="tech-tag"><i class="fas fa-hdd"></i> S3</span>
+                            <span class="tech-tag"><i class="fas fa-camera"></i> Barman</span>
+                            <span class="tech-tag"><i class="fas fa-box"></i> Kopia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon security">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h3>RBAC and Security</h3>
+                            <p>Securing cloud-native infrastructure with fine-grained access control and automated
+                                policy enforcement techniques.</p>
+                        </div>
+                    </div>
+                    <div class="skill-features">
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-rancher-original"></i> Rancher</span>
+                            <span class="tech-tag"><i class="fas fa-gavel"></i> Kyverno</span>
+                            <span class="tech-tag"><i class="fas fa-lock"></i> SOPS</span>
+                            <span class="tech-tag"><i class="fas fa-key"></i> Hashicorp Vault</span>
+                            <span class="tech-tag"><i class="fas fa-key"></i> KMS</span>
+                            <span class="tech-tag"><i class="fas fa-shield-halved"></i> Tetragon</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Work Experience</h2>
+            <div class="timeline">
+                <!-- Role 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>DevOps Engineer / Team Lead</h3>
+                                <p class="company">Improwised Technologies pvt ltd</p>
+                            </div>
+                            <span class="timeline-date">June 2023 – Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Led the product infrastructure team in designing high-scale architectures, driving
+                                DevOps culture, and mentoring engineers.</li>
+                            <li>Automated multi-cloud provisioning and CI/CD pipelines utilizing Terraform and
+                                Kubernetes.</li>
+                            <li>Enhanced system observability, reliability, and security compliance with monitoring and
+                                self-healing structures.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-terraform-plain"></i> Terraform</span>
+                            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> Managed K8S</span>
+                            <span class="tech-tag"><span class="tech-icon-mask"
+                                    style="--mask-url: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flux.svg');"></span>
+                                FluxCD / Operator</span>
+                            <span class="tech-tag"><i class="fas fa-network-wired"></i> Cilium</span>
+                            <span class="tech-tag"><i class="fas fa-shield-halved"></i> Hubble</span>
+                            <span class="tech-tag"><i class="fas fa-gavel"></i> Kyverno</span>
+                            <span class="tech-tag"><i class="fas fa-lock"></i> SOPS</span>
+                            <span class="tech-tag"><i class="fas fa-life-ring"></i> DR</span>
+                            <span class="tech-tag"><i class="fas fa-paper-plane"></i> Drone CI</span>
+                            <span class="tech-tag"><i class="devicon-jenkins-line"></i> Jenkins</span>
+                            <span class="tech-tag"><i class="devicon-podman-plain"></i> Podman</span>
+                            <span class="tech-tag"><i class="fas fa-terminal"></i> Scripting & Automation</span>
+                            <span class="tech-tag"><i class="devicon-amazonwebservices-plain"></i> AWS</span>
+                            <span class="tech-tag"><i class="devicon-azure-plain"></i> Azure</span>
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> E2E Networks</span>
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> Octos Cloud</span>
+                            <span class="tech-tag"><i class="fas fa-users-cog"></i> Leadership</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Role 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>DevOps Engineer Intern</h3>
+                                <p class="company">Improwised Technologies pvt ltd</p>
+                            </div>
+                            <span class="timeline-date">Jan 2023 – June 2023</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Assisted in setting up containerized environments and basic CI/CD workflows.</li>
+                            <li>Learned and implemented infrastructure monitoring and logging practices.</li>
+                            <li>Worked closely with senior engineers to understand cloud-native architecture.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-linux-plain"></i> Linux</span>
+                            <span class="tech-tag"><i class="devicon-docker-plain"></i> Docker</span>
+                            <span class="tech-tag"><i class="fab fa-github"></i> Github Actions</span>
+                            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                            <span class="tech-tag"><span class="tech-icon-mask"
+                                    style="--mask-url: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/helm.svg');"></span>
+                                Helm chart</span>
+                            <span class="tech-tag"><i class="devicon-rancher-original"></i> Rancher</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+            <div class="education-grid reveal">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <div>
+                                <h3>Bachelor of Engineering (B.E.)</h3>
+                                <p class="college">Government Engineering College Rajkot</p>
+                                <p class="field">Computer Engineering</p>
+                            </div>
+                            <span class="education-date">2019 – 2023</span>
+                        </div>
+                        <p class="education-description">
+                            Acquired a solid foundation in computer engineering principles, data structures, algorithms,
+                            operating systems, databases, and computer networks. Participated in programming labs and
+                            developed automated scripting utilities using Python and Bash.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-grid reveal">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Enterprise Healthcare Infrastructure</h3>
+                        <p>Architected and maintained multiple production-grade infrastructure on AWS, Azure, TM Cloud
+                            and VPN based environments. Orchestrated 100+
+                            microservices for a large-scale healthcare system, implementing High Availability (HA) for
+                            PostgreSQL and MongoDB. Managed 10+ environments with complex security requirements using
+                            Keycloak and automated backup/DR plans.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                            <span class="tech-tag"><i class="devicon-terraform-plain"></i> Terraform</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> HA PostgreSQL/MongoDB</span>
+                            <span class="tech-tag"><i class="devicon-amazonwebservices-plain"></i> AWS</span>
+                            <span class="tech-tag"><i class="devicon-azure-plain"></i> Azure</span>
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> TM Cloud</span>
+                            <span class="tech-tag"><i class="fas fa-key"></i> Keycloak</span>
+                            <span class="tech-tag"><i class="fas fa-shield-alt"></i> DR & Backup</span>
+                            <span class="tech-tag"><i class="fas fa-cubes"></i> 100+ Microservices</span>
+                            <span class="tech-tag"><i class="fas fa-cubes"></i> 10+ Environments/Clusters</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Smart City Infrastructure Solutions</h3>
+                        <p>Provisioned and managed four complex environments (including Production) using VMWare Cloud
+                            infrastructure. Deployed 40+ microservices leveraging containerization and search
+                            technologies. Architected High-Availability (HA) database clusters to support critical
+                            city-wide services.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> VMware Tanzu</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> HA Databases</span>
+                            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                            <span class="tech-tag"><span class="tech-icon-mask"
+                                    style="--mask-url: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/opensearch.svg');"></span>
+                                OpenSearch</span>
+                            <span class="tech-tag"><span class="tech-icon-mask"
+                                    style="--mask-url: url('https://www.vectorlogo.zone/logos/apache_nifi/apache_nifi-icon.svg');"></span>
+                                NiFi</span>
+                            <span class="tech-tag"><i class="fas fa-key"></i> Keycloak</span>
+                            <span class="tech-tag"><i class="fas fa-tower-broadcast"></i> EMQX/MQTT</span>
+                            <span class="tech-tag"><i class="fas fa-cubes"></i> 40+ Microservices</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Media & Content Delivery Platform</h3>
+                        <p>Designed and managed a highly available AWS cloud infrastructure for a collaborative digital
+                            ecard and group greeting platform. Orchestrated real-time data processing workflows for
+                            user-generated media—including dynamic handwritten canvases, stickers, and voice
+                            recordings—using AWS Lambda, Amazon S3, SQS, and RDS. Hosted the microservices on a
+                            Kubernetes cluster, focusing on multi-AZ redundancy and secure KMS-encrypted storage.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-amazonwebservices-plain"></i> AWS</span>
+                            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> Kubernetes</span>
+                            <span class="tech-tag"><i class="fas fa-bolt"></i> Lambda</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> RDS</span>
+                            <span class="tech-tag"><i class="fas fa-hdd"></i> S3</span>
+                            <span class="tech-tag"><i class="fas fa-envelope-open-text"></i> SQS</span>
+                            <span class="tech-tag"><i class="fas fa-lock"></i> KMS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Automated Cloud-Native Infrastructure</h3>
+                        <p>Created and maintained 5+ cluster. Created CI/CD pipelines for most services and reduced
+                            cloud costs through efficient utilization and management of cloud and internal
+                            infrastructure. Enhanced cluster security and networking with Cilium, Kyverno, and SOPS.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag"><i class="devicon-terraform-plain"></i> Terraform</span>
+                            <span class="tech-tag"><i class="devicon-kubernetes-plain"></i> K3S</span>
+                            <span class="tech-tag"><span class="tech-icon-mask"
+                                    style="--mask-url: url('https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/flux.svg');"></span>
+                                FluxCD</span>
+                            <span class="tech-tag"><i class="fas fa-network-wired"></i> Cilium</span>
+                            <span class="tech-tag"><i class="fas fa-lock"></i> SOPS</span>
+                            <span class="tech-tag"><i class="fas fa-gavel"></i> Kyverno</span>
+                            <span class="tech-tag"><i class="fab fa-github"></i> GitHub Actions</span>
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> E2E Networks</span>
+                            <span class="tech-tag"><i class="fas fa-cloud-sun"></i> Octos Cloud</span>
+                            <span class="tech-tag"><i class="fas fa-server"></i> On-prem</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> Database Operators</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge">
+                    <span>Contact</span>
+                </div>
+                <h2 class="section-title">Let's Build Something Together</h2>
+                <p class="section-subtitle">Let's discuss cloud-native design, CI/CD, Kubernetes, or just talk
+                    tech—reach out!</p>
+            </div>
+
+            <div class="contact-grid reveal">
+                <!-- Left Sidebar: Info Cards -->
+                <div class="contact-sidebar">
+                    <!-- Status Card -->
+                    <div class="contact-info-card status-card">
+                        <div class="status-header">
+                            <span class="pulse-dot"></span>
+                            <span class="status-text">Availability Status</span>
+                        </div>
+                        <h3>Open to Opportunities</h3>
+                        <div class="metric-row">
+                            <div class="metric-item">
+                                <span class="metric-label">Uptime</span>
+                                <strong class="metric-val">99.999%</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Timezone</span>
+                                <strong class="metric-val">IST (UTC+5:30)</strong>
+                            </div>
+                        </div>
+                        <div class="metric-row" style="margin-top: 0.25rem;">
+                            <div class="metric-item">
+                                <span class="metric-label">Work Preference</span>
+                                <strong class="metric-val">Office (Rajkot) / Remote</strong>
+                            </div>
+                        </div>
+                        <div class="uptime-bar">
+                            <div class="uptime-progress">
+                                <div class="uptime-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Platform Performance Metrics (SLIs) Card -->
+                    <div class="contact-info-card specs-card">
+                        <h3>DevOps Performance SLIs</h3>
+                        <div class="nodes-list">
+                            <div class="node-item">
+                                <div class="node-header">
+                                    <span class="node-name">Lead Time to Production</span>
+                                    <span class="node-status status-online">&lt; 2m</span>
+                                </div>
+                                <span class="node-desc">Average duration from pull request merge to live release in
+                                    production.</span>
+                            </div>
+                            <div class="node-item">
+                                <div class="node-header">
+                                    <span class="node-name">Infrastructure Cost Savings</span>
+                                    <span class="node-status status-online">30%</span>
+                                </div>
+                                <span class="node-desc">Cloud spend reduction optimized via automated resource and spot
+                                    node scaling.</span>
+                            </div>
+
+                            <div class="node-item">
+                                <div class="node-header">
+                                    <span class="node-name">Error Resolution & Optimization</span>
+                                    <span class="node-status status-online">Efficient</span>
+                                </div>
+                                <span class="node-desc">Mean time to resolution (MTTR) minimized via automated log
+                                    triaging, self-healing setups, and cluster-wide resource optimization
+                                    scripts.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form Card -->
+                <div class="contact-main">
+                    <div class="contact-form-card">
+                        <!-- Terminal Title Bar / Decorative DevOps Controls -->
+                        <div class="card-header-bar">
+                            <div class="window-controls">
+                                <span class="dot close"></span>
+                                <span class="dot minimize"></span>
+                                <span class="dot maximize"></span>
+                            </div>
+                            <div class="active-tab">
+                                <i class="fas fa-file-code tab-icon"></i>
+                                <span class="tab-title">contact-tunnel.yaml</span>
+                            </div>
+                            <div class="status-header">
+                                <span class="pulse-dot form-status-dot"></span>
+                                <span class="status-text form-status-text"><span class="status-prefix">Form Status: </span>Ready</span>
+                            </div>
+                        </div>
+
+                        <div class="card-inner-content">
+                            <div class="form-intro-text">
+                                <h3 class="form-card-title">Send a Message</h3>
+                                <p class="form-card-subtitle">Establish a secure transmission tunnel directly to my
+                                    inbox.</p>
+                            </div>
+
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="form-name"><i class="fas fa-user label-icon"></i> Name</label>
+                                        <div class="input-wrapper">
+                                            <input type="text" id="form-name" name="name" placeholder="John Doe"
+                                                required autocomplete="name">
+                                            <span class="focus-border-line"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-email"><i class="fas fa-envelope label-icon"></i> Email</label>
+                                        <div class="input-wrapper">
+                                            <input type="email" id="form-email" name="email"
+                                                placeholder="john@example.com" required autocomplete="email">
+                                            <span class="focus-border-line"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-subject"><i class="fas fa-tag label-icon"></i> Subject</label>
+                                    <div class="input-wrapper">
+                                        <input type="text" id="form-subject" name="subject"
+                                            placeholder="Project Collaboration" required>
+                                        <span class="focus-border-line"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-message"><i class="fas fa-comment-alt label-icon"></i>
+                                        Message</label>
+                                    <div class="input-wrapper">
+                                        <textarea id="form-message" name="message" rows="5"
+                                            placeholder="Write your message here..." required></textarea>
+                                        <span class="focus-border-line"></span>
+                                    </div>
+                                </div>
+                                <button type="submit" class="form-submit-btn">
+                                    <span>Send Message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+
+                            <!-- Live Action Console during transmitting -->
+                            <div id="form-console-logs" class="form-console-logs hidden">
+                                <div class="console-body">
+                                    <div class="console-line"><span class="console-prompt">$</span> curl -X POST
+                                        https://api.chintan.dev/messages</div>
+                                    <div class="console-line dynamic-log-line" id="log-1"></div>
+                                    <div class="console-line dynamic-log-line" id="log-2"></div>
+                                    <div class="console-line dynamic-log-line" id="log-3"></div>
+                                    <div class="console-line dynamic-log-line" id="log-4"></div>
+                                </div>
+                            </div>
+
+                            <div id="form-success-state" class="form-success-state hidden">
+                                <div class="success-icon-wrap">
+                                    <div class="success-ring"></div>
+                                    <i class="fas fa-check-double"></i>
+                                </div>
+                                <h3>Transmission Successful</h3>
+                                <p class="success-desc">Thank you! The message payload has been successfully dispatched.
+                                </p>
+
+                                <div class="receipt-card">
+                                    <div class="receipt-header">DEPLOYMENT RECEIPT</div>
+                                    <div class="receipt-body">
+                                        <div class="receipt-row">
+                                            <span class="receipt-label">STATUS</span>
+                                            <span class="receipt-value success-text">SYNCED (200)</span>
+                                        </div>
+                                        <div class="receipt-row">
+                                            <span class="receipt-label">DISPATCHED AT</span>
+                                            <span class="receipt-value" id="receipt-time">2026-06-11 08:39 UTC</span>
+                                        </div>
+                                        <div class="receipt-row">
+                                            <span class="receipt-label">ROUTING TUNNEL</span>
+                                            <span class="receipt-value">gitops://github/luv7804</span>
+                                        </div>
+                                        <div class="receipt-row">
+                                            <span class="receipt-label">TRANSACTION HASH</span>
+                                            <span class="receipt-value font-mono"
+                                                id="receipt-hash">tx_a4f91b8d23e5e117</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button id="btn-send-another" class="btn-send-another">
+                                    <i class="fas fa-redo"></i> Establish New Tunnel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logo-grad-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="var(--primary-color)" />
+                                <stop offset="100%" stop-color="#a855f7" />
+                            </linearGradient>
+                        </defs>
+                        <path
+                            d="M6 16 C6 10, 12 10, 16 16 C20 22, 26 22, 26 16 C26 10, 20 10, 16 16 C12 22, 6 22, 6 16 Z"
+                            fill="none" stroke="url(#logo-grad-footer)" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <line x1="14" y1="20" x2="18" y2="12" stroke="var(--text-color)" stroke-width="2.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    <span>Chintan</span>
+                </a>
+                <div class="social-footer">
+                    <a href="https://github.com/Luv7804" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chintan-viradiya-04484b1b8/" target="_blank"
+                        title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:chintanviradiya360311@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="copyright">&copy; <span id="year"></span> Chintan Viradiya. Designed & Built with <i
+                        class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
